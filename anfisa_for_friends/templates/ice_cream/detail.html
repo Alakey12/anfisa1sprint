@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
   Анфиса для друзей. Подробное описание мороженого
 {% endblock %}
@@ -11,10 +12,10 @@
   </div>
   <div class="col-12 col-md-6 mb-3">
     <!-- Картинку берём из статики -->
-    <img 
+    <img
       class="img-fluid"
       height="400" width="300"
-      src="img/image-holder.png"
+      src="{% static 'img/image-holder.png' %}"
       >
   </div>
 </div>
